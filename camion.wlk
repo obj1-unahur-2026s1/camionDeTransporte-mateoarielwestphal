@@ -4,13 +4,14 @@ object camion {
 
     method cargarCosa(cosa) {
       cosas.add(cosa)
+      cosa.consecuencia()
     }
 
     method descargarCosa(cosa) {
       cosas.remove(cosa)
     }
 
-    method hayAlgunPesoPar() = cosas.any({cosa => cosa.peso().even()})
+    method hayAlgunPesoPar() = cosas.all({cosa => cosa.peso().even()})
 
     method hayCosaDePeso(peso) = cosas.any({cosa => cosa.peso() == peso})
 
@@ -27,4 +28,6 @@ object camion {
     method tieneCosaQuePesaMinMax(min,max) =   cosas.any({cosa => cosa.peso().between(min, max)})
 
     method cosaMasPesada() = cosas.max({cosa => cosa.peligrosidad()})
+
+    method totalBustos() = cosas.sum({cosa => cosa.bulto()}) 
 }

@@ -4,7 +4,7 @@ import camion.*
 
 describe "group of test for cosas" {
 
-  test "first test" {
+  test "tiene que dar true" {
     bumblebee.robot()
     arenaGranel.asignarPeso(150)
     bateriaAntiaerea.conMisiles()
@@ -16,5 +16,4 @@ describe "group of test for cosas" {
     camion.cargarCosa(embalajeSeguridad)
     assert.equals(true, camion.tieneCosaQuePesaMinMax(80,150))
   }
-
 }

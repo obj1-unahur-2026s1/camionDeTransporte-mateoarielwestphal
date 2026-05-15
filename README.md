@@ -26,7 +26,6 @@ Por eso, les pedimos que se organicen de esta forma.
 - Conocer si el camión está excedido del peso máximo permitido,que es de 2500 kg. 
 - Saber si el camión puede circular en ruta. Eso depende de que no exceda el peso máximo permitido y ninguno de los objetos cargados supere un nivel máximo de peligrosidad que depende del viaje, por eso para este caso el valor del nivel se pasará como argumento.
 
-
 ### Las cosas
 De las cosas que puede transportar el camión nos interesa el peso y la peligrosidad. Por ahora conocemos las siguientes:
 
