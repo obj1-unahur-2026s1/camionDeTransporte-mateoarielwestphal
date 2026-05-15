@@ -30,4 +30,4 @@ object camion {
     method cosaMasPesada() = cosas.max({cosa => cosa.peligrosidad()})
 
     method totalBustos() = cosas.sum({cosa => cosa.bulto()}) 
-}
+} 

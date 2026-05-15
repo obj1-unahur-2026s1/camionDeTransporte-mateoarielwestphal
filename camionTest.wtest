@@ -1,7 +1,6 @@
 import cosas.*
 import camion.*
 
-
 describe "group of test for cosas" {
 
   test "tiene que dar true" {
