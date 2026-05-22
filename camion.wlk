@@ -32,4 +32,8 @@ object camion {
     method totalBustos() = cosas.sum({cosa => cosa.bulto()}) 
 
     method totalDeCosas() = cosas.size()
+
+    method dePrueba() {
+      
+    }
 } 
